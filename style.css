@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
 
-
-
 *,*::before,*::after{
     margin:0;
     padding:0;
@@ -18,12 +16,12 @@ body{
 }
 
 nav{
-    min-height: 10vh;   /*gives height to navbar*/
-    width: 90%;      /*space between borders and content*/
-    margin: auto;     /*leave a space in logo */
-    display: flex;      /*logo or content bar ko ek line me laane k lie*/
-    justify-content: space-between;    /*unke bech me space k lie*/
-    align-items: center;  /*logo ko center me laane k lie*/
+    min-height: 10vh;   
+    width: 90%;     
+    margin: auto;     
+    display: flex;      
+    justify-content: space-between;    
+    align-items: center;  
     padding: 20px 0px;
 }
 
@@ -34,10 +32,10 @@ nav{
 .page{
     min-height: 90vh;
     display: grid;
-    grid-template-columns: 5% 1fr 1fr 1fr 5%;   /*divide the page into 4parts of two 5% and three ifr column*/
+    grid-template-columns: 5% 1fr 1fr 1fr 5%;  
 }   
 .chef,.hairstyle{
-    position: absolute;   /*so that we can change b/w pages on click*/
+    position: absolute;  
     bottom: 0%;
     left: 0%;
     width: 100%;
@@ -50,12 +48,12 @@ nav{
     height: 500px;
     align-self: center;
     justify-self: center;
-    display: flex;   /*dec. the distance b/w the left and right image*/
+    display: flex;   
 }
 
 .hero img{
     height: 500px;
-    transition: transform 0.3s ease-out;    /*jisse img upr niche hogi*/ /*ease-out--> slow end */
+    transition: transform 0.3s ease-out;    
     cursor: pointer;
 }
 
@@ -71,7 +69,7 @@ nav{
 }
 
 .hero:hover .model-right{   
-    transform: translate(0%,0%);   /*hover krne pr back to original state*/
+    transform: translate(0%,0%);   
 }
 
 .hero:hover .model-left{   
@@ -79,8 +77,8 @@ nav{
 }
 
 .details{
-    grid-column: 2/3;   /*image ko center me le aaega*/
-    align-self: end;     /*name ko end me dal dega photo k*/
+    grid-column: 2/3;   
+    align-self: end;     
 }
 
 .details h1{
@@ -111,18 +109,18 @@ nav{
 }
 
 .pages h3{
-    font-size: 24px;   /*inc the size of numbers*/
-    padding: 30px;       /*padding b/w the numbers*/
+    font-size: 24px;   
+    padding: 30px;       
 }
 
 .pages svg{
     cursor: pointer;
     opacity: 0.5;   
-    transform: scale(2);   /*inc the size of shapes(circle)*/
+    transform: scale(2);  
 }
 
 .pages svg:hover{
-    animation: dot 0.5s ease-in-out infinite alternate;   /*infinite so that transition happen for infinite times and alternate so transitio happens alternately*/
+    animation: dot 0.5s ease-in-out infinite alternate;   
 }
 
 @keyframes dot {
@@ -141,19 +139,19 @@ nav{
 .banner {
     height: 50vh;
     width: 100%;
-    position: relative;   /*we want author text on top of it*/
+    position: relative;   
   }
   .banner img {
-    height: 100%;    /*equals to size of its banner*/
+    height: 100%;    
     width: 100%;
-    object-fit: cover;       /*img to fit*/
-    object-position: top;    /*its container.*/
+    object-fit: cover;       
+    object-position: top;   
   }
   .author {
-    position: absolute;  /*to overlap author with banner*/
+    position: absolute;  
     top: 70%;
     left: 50%;
-    transform: translate(-50%, -70%);  /*to center it*/
+    transform: translate(-50%, -70%);  
     color: white;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
     text-align: center;
@@ -166,7 +164,7 @@ nav{
     font-size: 32px;
   }
 
-  .story,.my-work{  /*to make one on left and one on right*/
+  .story,.my-work{  
     display: flex;
     justify-content: space-between;
     width:90%;
@@ -175,7 +173,7 @@ nav{
   }
 
   .story-description,.work-description{
-    width:50%;  /*to make space b/w text and img*/
+    width:50%;  /
   }
   
   .story-description h3,.work-description h3{
@@ -190,16 +188,16 @@ nav{
 
   .work-gallery{
     display: grid;
-    grid-template-columns: repeat(3,200px);  /*repeat 200px then drop it to new line*/
+    grid-template-columns: repeat(3,200px); 
   }
   .work-gallery img{
-    width: 124%;   /*make all images of same size*/
+    width: 124%;   
   }
 
   @media (max-width:1100px) { 
    .page{
     grid-template-columns: 5% 1fr 5%;
-    grid-template-rows: 2fr 1fr;    /*2 for img and 1 for text*/
+    grid-template-rows: 2fr 1fr;    
     align-items: center;
    } 
    .hero{
@@ -255,7 +253,7 @@ nav{
     width:100%;
     height: 50vh;
     background: white;
-    z-index: 1;   /*so that nav bar comes to the top of img*/
+    z-index: 1;   
     color: black;
     display: grid;
     grid-template-columns: 5% 1fr 1fr 5%;
@@ -283,9 +281,9 @@ nav{
  }
 
  .logo,.menu{
-    z-index: 2;   /*to see logo on top of navbar*/
+    z-index: 2;   /
  }
 
  .menu{
-    cursor: pointer;   /*to see menu items*/
+    cursor: pointer; 
  }
